@@ -1,14 +1,15 @@
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import hunterFlooringImg from "@assets/Image_3-21-26_at_11.12_PM_(1)_1774157483011.png";
 
 export function Hero() {
   return (
     <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden min-h-[90vh] flex items-center">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1920&auto=format&fit=crop"
-          alt="Master carpenter working on wood in workshop"
-          className="w-full h-full object-cover object-center"
+          src={hunterFlooringImg}
+          alt="Hunter cutting flooring pieces with precision"
+          className="w-full h-full object-cover object-top"
         />
         <div className="absolute inset-0 bg-stone-900/75" />
         <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-900/40 to-transparent" />

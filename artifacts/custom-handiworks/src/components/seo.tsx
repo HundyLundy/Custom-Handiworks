@@ -7,7 +7,7 @@ interface SEOProps {
 
 export function SEO({ 
   title = "Custom Handiworks | Premium Carpentry & Handyman in Denver, CO", 
-  description = "Denver's trusted local experts for custom carpentry, deck building, home repairs, and renovations. Serving an 8-mile radius from Eudora Street. Get a free quote today!" 
+  description = "Denver's trusted local experts for custom carpentry, deck building, home repairs, and renovations. Serving Denver and surrounding neighborhoods. Get a free quote today!" 
 }: SEOProps) {
   const schema = {
     "@context": "https://schema.org",
@@ -16,14 +16,13 @@ export function SEO({
     "image": "https://customhandiworks.com/images/logo.png",
     "@id": "https://customhandiworks.com",
     "url": "https://customhandiworks.com",
-    "telephone": "(720) 555-0123",
-    "email": "info@customhandiworks.com",
+    "telephone": "(720) 937-3004",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "761 Eudora Street",
       "addressLocality": "Denver",
       "addressRegion": "CO",
-      "postalCode": "8020",
+      "postalCode": "80220",
       "addressCountry": "US"
     },
     "geo": {
