@@ -4,17 +4,17 @@ import { Star } from "lucide-react";
 export function Testimonials() {
   const reviews = [
     {
-      name: "Holden P.",
-      location: "Englewood, CO",
-      date: "February 2026",
-      text: "Very helpful and quick to respond! Hunter was able to assess the problem with my dryer quickly and had the new part installed the same day. Highly recommend!",
-      rating: 5
-    },
-    {
       name: "Maura A.",
       location: "Southwest Denver, CO",
       date: "February 2026",
       text: "Hunter completely rebuilt my wood gate after years of sagging and sticking — a few big wind gusts were the final straw. The new gate is solid, perfectly aligned, and opens and closes smoothly. He did great work at a fair price and clearly takes pride in doing it right. Highly recommend.",
+      rating: 5
+    },
+    {
+      name: "Holden P.",
+      location: "Englewood, CO",
+      date: "February 2026",
+      text: "Very helpful and quick to respond! Hunter was able to assess the problem with my dryer quickly and had the new part installed the same day. Highly recommend!",
       rating: 5
     },
     {

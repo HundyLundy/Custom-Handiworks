@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Ruler, PaintRoller, Sofa, Wrench, Hammer, Home } from "lucide-react";
 import banquetteImg from "@assets/6672B2C3-361B-4E11-A962-1B0CD6DCDE74_1774146982331.jpeg";
-import tableImg from "@assets/B0F4E4AD-E0D1-4265-BC80-4B8029C501A7_1774146982332.jpeg";
+import tableImg from "@assets/handmade-furniture_1774148000000.png";
 import barnDoorsImg from "@assets/IMG_0755_1774146982330.jpeg";
 import trimImg from "@assets/IMG_0596_1774146982331.jpeg";
 import gateImg from "@assets/IMG_0788_1774146982326.jpeg";
@@ -60,7 +60,6 @@ const primaryServices = [
 
 const additionalServices = [
   "Deck Building & Repair",
-  "Door & Window Installation",
   "Fence Installation",
   "Furniture Assembly",
 ];
@@ -89,7 +88,7 @@ export function Services() {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {primaryServices.map((service, index) => {
             const Icon = service.icon;
             return (
@@ -116,23 +115,31 @@ export function Services() {
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-2">{service.title}</h3>
                   <p className="text-muted-foreground leading-relaxed text-sm">{service.description}</p>
-                  {service.video && (
-                    <div className="mt-5 rounded-xl overflow-hidden border border-border">
-                      <video
-                        src={service.video}
-                        controls
-                        playsInline
-                        muted
-                        className="w-full h-auto"
-                        aria-label="Bathroom remodel project video"
-                      />
-                    </div>
-                  )}
                 </div>
               </motion.div>
             );
           })}
         </div>
+
+        {/* Video sits below the last 2 cards (Home Repairs + Interior Renovations) */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8"
+        >
+          <div className="hidden lg:block" />
+          <div className="lg:col-span-2 rounded-2xl overflow-hidden border border-border shadow-sm">
+            <video
+              src="/bathroom-remodel.mov"
+              controls
+              playsInline
+              muted
+              className="w-full h-auto block"
+              aria-label="Sister's bathroom remodel project by Custom Handiworks"
+            />
+          </div>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 16 }}

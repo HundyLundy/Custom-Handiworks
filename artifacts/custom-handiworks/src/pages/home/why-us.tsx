@@ -6,9 +6,9 @@ export function WhyUs() {
     { icon: Clock, title: "22 Years of Experience", desc: "Two decades of honing the craft — every joint, every cut done right." },
     { icon: MapPin, title: "Local Denver Expert", desc: "We know Denver homes inside and out. No drive fees, fast response." },
     { icon: Award, title: "Quality Guaranteed", desc: "We don't leave until the work is something we're proud of." },
-    { icon: Zap, title: "Fast Response", desc: "Prompt communication and flexible scheduling — no weeks-long waits." },
-    { icon: ThumbsUp, title: "Free Estimates", desc: "Transparent, upfront pricing. No surprises on the final bill." },
     { icon: Star, title: "Custom Work Welcome", desc: "Bring us your vision. If you can sketch it, we can build it." },
+    { icon: ThumbsUp, title: "Free Estimates", desc: "Transparent, upfront pricing. No surprises on the final bill." },
+    { icon: Zap, title: "Fast Response", desc: "Prompt communication and flexible scheduling — no weeks-long waits." },
   ];
 
   return (
