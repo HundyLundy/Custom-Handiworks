@@ -80,7 +80,7 @@ export function Footer() {
                   </div>
                   <div className="flex justify-between gap-4">
                     <span>Weekends:</span>
-                    <span>Closed</span>
+                    <span>By Appointment</span>
                   </div>
                 </div>
               </li>

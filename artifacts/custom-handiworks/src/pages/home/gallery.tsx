@@ -111,7 +111,7 @@ export function Gallery() {
             <div className="relative">
               <img
                 src={barAfterImg}
-                alt="Finished custom reception desk — green fabric wrap with white quartz top"
+                alt="Finished custom reception desk — green fabric wrap with painted wood rounded top"
                 className="w-full h-72 object-cover object-center"
               />
               <div className="absolute top-3 right-3 bg-primary/90 text-primary-foreground text-xs font-bold px-3 py-1 rounded-full tracking-widest uppercase">
@@ -120,8 +120,8 @@ export function Gallery() {
             </div>
           </div>
           <div className="bg-white px-6 py-4 border-t border-border">
-            <p className="text-sm font-semibold text-foreground">Custom Reception Desk Build</p>
-            <p className="text-xs text-muted-foreground mt-0.5">Raw wood bar frame → finished fabric-wrapped reception desk with quartz top</p>
+            <p className="text-sm font-semibold text-foreground">Custom Reception Desk Built for <a href="https://www.lovebeehive.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">BeeHive</a></p>
+            <p className="text-xs text-muted-foreground mt-0.5">Raw wood frame with rounded top → finished fabric-wrapped reception desk with painted wood top</p>
           </div>
         </motion.div>
 
