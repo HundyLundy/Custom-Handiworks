@@ -25,11 +25,9 @@ import hunterFlooringImg from "@assets/Image_3-21-26_at_11.12_PM_(1)_17741574830
 const photos = [
   { src: staircaseImg, alt: "Custom oak staircase with hand-forged iron balusters", label: "Custom Staircase" },
   { src: liveEdgeShelvesImg, alt: "Live edge floating shelves with steel brackets", label: "Live Edge Shelves" },
-  { src: cedarBenchImg, alt: "Custom cedar outdoor bench", label: "Cedar Garden Bench" },
+  { src: cedarBenchImg, alt: "Custom redwood outdoor garden bench", label: "Redwood Garden Bench" },
   { src: blueBookshelvesImg, alt: "Custom built-in blue bookshelves with window seat", label: "Built-In Bookshelves" },
   { src: bathroomTileImg, alt: "Bathroom renovation with striped subway tile and custom shower niche", label: "Bathroom Renovation" },
-  { src: rangeHoodImg, alt: "Custom reclaimed wood range hood", label: "Reclaimed Wood Range Hood" },
-  { src: kitchenIslandImg, alt: "Reclaimed wood kitchen island with quartz countertop", label: "Kitchen Island" },
   { src: butcherBlockImg, alt: "Custom butcher block kitchen countertop", label: "Butcher Block Countertop" },
   { src: walkInClosetImg, alt: "Custom built-in walk-in closet system", label: "Walk-In Closet Built-In" },
   { src: commercialDeckImg, alt: "Commercial deck with custom built-in benches", label: "Deck & Built-In Seating" },
@@ -122,6 +120,35 @@ export function Gallery() {
           <div className="bg-white px-6 py-4 border-t border-border">
             <p className="text-sm font-semibold text-foreground">Custom Reception Desk Built for <a href="https://www.lovebeehive.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">BeeHive</a></p>
             <p className="text-xs text-muted-foreground mt-0.5">Raw wood frame with rounded top → finished fabric-wrapped reception desk with painted wood top</p>
+          </div>
+        </motion.div>
+
+        {/* Reclaimed wood paired project card */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-6 rounded-2xl overflow-hidden border border-border shadow-sm"
+        >
+          <div className="grid grid-cols-2">
+            <div className="relative">
+              <img
+                src={rangeHoodImg}
+                alt="Custom reclaimed wood range hood built in Denver"
+                className="w-full h-72 object-cover object-center"
+              />
+            </div>
+            <div className="relative">
+              <img
+                src={kitchenIslandImg}
+                alt="Kitchen island wrapped in the same reclaimed wood as the range hood"
+                className="w-full h-72 object-cover object-center"
+              />
+            </div>
+          </div>
+          <div className="bg-white px-6 py-4 border-t border-border">
+            <p className="text-sm font-semibold text-foreground">One kitchen, one wood — two statement pieces</p>
+            <p className="text-xs text-muted-foreground mt-0.5">The reclaimed wood on the range hood and the kitchen island base came from the same source. Same house, same material, intentionally matched.</p>
           </div>
         </motion.div>
 
