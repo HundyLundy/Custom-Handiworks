@@ -163,17 +163,6 @@ export function Services() {
           </div>
         </motion.div>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-center text-sm text-muted-foreground mt-8"
-        >
-          Got a home project in Denver?{" "}
-          <a href="#contact" className="text-primary font-semibold hover:underline">
-            Get a free estimate →
-          </a>
-        </motion.p>
       </div>
     </section>
   );
