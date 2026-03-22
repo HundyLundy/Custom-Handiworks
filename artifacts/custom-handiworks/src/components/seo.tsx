@@ -17,6 +17,7 @@ export function SEO({
     "@id": "https://customhandiworks.com",
     "url": "https://customhandiworks.com",
     "telephone": "(720) 937-3004",
+    "email": "hunter@customhandiworks.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "761 Eudora Street",
