@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import tableImg from "@assets/EF916681-12C9-4948-BF95-BBAF7757E318_1774146982331.jpeg";
+import tableImg from "@assets/Image_3-21-26_at_11.04_PM_1774157549013.png";
 
 export function Contact() {
   useEffect(() => {
@@ -45,7 +45,7 @@ export function Contact() {
           <div className="lg:w-2/5 relative hidden lg:block">
             <img
               src={tableImg}
-              alt="Custom walnut dining table built by Custom Handiworks Denver"
+              alt="Live edge floating shelves with steel brackets built by Custom Handiworks Denver"
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-stone-900/30" />

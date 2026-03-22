@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
-import gateImg from "@assets/IMG_0789_1774146982326.jpeg";
+import gateImg from "@assets/Image_3-21-26_at_11.12_PM_1774157483011.png";
 
 export function ServiceArea() {
   const neighborhoods = [
@@ -42,7 +42,7 @@ export function ServiceArea() {
           <div className="lg:w-1/2 relative min-h-[400px]">
             <img
               src={gateImg}
-              alt="Custom cedar wood gate built in Denver Colorado"
+              alt="Custom modern slatted fence gate installation"
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-primary/10 mix-blend-overlay" />

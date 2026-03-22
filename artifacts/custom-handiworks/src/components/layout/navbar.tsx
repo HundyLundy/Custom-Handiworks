@@ -17,6 +17,7 @@ export function Navbar() {
     { name: "Services", href: "#services" },
     { name: "Why Us", href: "#why-us" },
     { name: "Service Area", href: "#service-area" },
+    { name: "Gallery", href: "#gallery" },
     { name: "Reviews", href: "#testimonials" },
     { name: "Tips", href: "#tips" },
   ];

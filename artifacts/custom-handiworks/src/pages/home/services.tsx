@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { Ruler, PaintRoller, Sofa, Wrench, Hammer, Home } from "lucide-react";
 import banquetteImg from "@assets/6672B2C3-361B-4E11-A962-1B0CD6DCDE74_1774146982331.jpeg";
-import tableImg from "@assets/handmade-furniture_1774148000000.png";
+import tableImg from "@assets/Image_3-21-26_at_11.03_PM_1774157549013.png";
 import barnDoorsImg from "@assets/IMG_0755_1774146982330.jpeg";
 import trimImg from "@assets/IMG_0596_1774146982331.jpeg";
-import gateImg from "@assets/IMG_0788_1774146982326.jpeg";
+import gateImg from "@assets/Image_3-21-26_at_11.05_PM_1774157483013.png";
 import bathroomImg from "@assets/IMG_5557_1774147985854.jpeg";
 
 const primaryServices = [
@@ -21,7 +21,7 @@ const primaryServices = [
     title: "Custom Furniture",
     description: "One-of-a-kind dining tables, benches, and seating built from fine hardwoods. Designed to last generations.",
     image: tableImg,
-    imageAlt: "Custom walnut dining table built in Denver",
+    imageAlt: "Custom cedar outdoor bench built in Denver",
     video: null,
   },
   {
