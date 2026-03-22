@@ -173,7 +173,7 @@ export function Gallery() {
               <img
                 src={photo.src}
                 alt={photo.alt}
-                className={`w-full h-auto block group-hover:scale-105 transition-transform duration-500${photo.cropBottom ? " mb-[-28px]" : ""}`}
+                className={`w-full h-auto block group-hover:scale-105 transition-transform duration-500${photo.cropBottom ? " mb-[-60px]" : ""}`}
               />
               <div className="absolute inset-0 bg-stone-950/0 group-hover:bg-stone-950/40 transition-colors duration-300 flex items-end p-4">
                 <span className="text-white text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0 transition-transform">
