@@ -75,6 +75,13 @@ export function WhyUs() {
             ))}
           </div>
 
+          <p className="text-center text-sm text-secondary-foreground/60 mt-10">
+            Got a home project in Denver?{" "}
+            <a href="#contact" className="text-primary-foreground font-semibold hover:underline">
+              Get a free estimate →
+            </a>
+          </p>
+
         </div>
       </div>
     </section>
