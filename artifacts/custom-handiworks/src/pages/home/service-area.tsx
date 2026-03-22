@@ -47,7 +47,7 @@ export function ServiceArea() {
             />
             <div className="absolute inset-0 bg-primary/10 mix-blend-overlay" />
             <div className="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent lg:block hidden" />
-            <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent lg:hidden" />
+            <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-white to-transparent lg:hidden" />
           </div>
 
         </div>

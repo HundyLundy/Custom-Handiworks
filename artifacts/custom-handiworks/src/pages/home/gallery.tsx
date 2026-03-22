@@ -148,7 +148,7 @@ export function Gallery() {
           </div>
           <div className="bg-white px-6 py-4 border-t border-border">
             <p className="text-sm font-semibold text-foreground">One kitchen, one wood — two statement pieces</p>
-            <p className="text-xs text-muted-foreground mt-0.5">The reclaimed wood on the range hood and the kitchen island base came from the same source. Same house, same material, intentionally matched.</p>
+            <p className="text-xs text-muted-foreground mt-0.5">Both pieces use reclaimed wood salvaged from an old barn in North Dakota. Same house, same material, intentionally matched.</p>
           </div>
         </motion.div>
 
