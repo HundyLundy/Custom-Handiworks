@@ -11,7 +11,7 @@ export function ServiceArea() {
   ];
 
   return (
-    <section id="service-area" className="py-24 bg-muted/30">
+    <section id="service-area" className="py-14 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-3xl shadow-xl shadow-black/5 border border-border overflow-hidden flex flex-col lg:flex-row">
 

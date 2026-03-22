@@ -5,6 +5,7 @@ import tableImg from "@assets/B0F4E4AD-E0D1-4265-BC80-4B8029C501A7_1774146982332
 import barnDoorsImg from "@assets/IMG_0755_1774146982330.jpeg";
 import trimImg from "@assets/IMG_0596_1774146982331.jpeg";
 import gateImg from "@assets/IMG_0788_1774146982326.jpeg";
+import bathroomImg from "@assets/IMG_5557_1774147985854.jpeg";
 
 const primaryServices = [
   {
@@ -12,42 +13,48 @@ const primaryServices = [
     title: "Custom Carpentry",
     description: "Built-ins, custom shelving, mantels, and bespoke wood projects designed and built to fit your home perfectly.",
     image: banquetteImg,
-    imageAlt: "Custom built banquette seating with walnut tabletop"
+    imageAlt: "Custom built banquette seating with walnut tabletop",
+    video: null,
   },
   {
     icon: Home,
     title: "Custom Furniture",
     description: "One-of-a-kind dining tables, benches, and seating built from fine hardwoods. Designed to last generations.",
     image: tableImg,
-    imageAlt: "Custom walnut dining table built in Denver"
+    imageAlt: "Custom walnut dining table built in Denver",
+    video: null,
   },
   {
     icon: PaintRoller,
     title: "Trim & Molding",
     description: "Crown molding, baseboards, wainscoting, and casing to give your rooms an elegant, finished look.",
     image: trimImg,
-    imageAlt: "Custom trim and crown molding carpentry work"
+    imageAlt: "Custom trim and crown molding carpentry work",
+    video: null,
   },
   {
     icon: Sofa,
     title: "Furniture Assembly & Door Installation",
     description: "Flat-pack furniture assembled correctly, plus interior door installation and hardware — done right the first time.",
     image: barnDoorsImg,
-    imageAlt: "Interior door installation in Denver home"
+    imageAlt: "Interior door installation in Denver home",
+    video: null,
   },
   {
     icon: Wrench,
     title: "Home Repairs",
     description: "From patching drywall to fixing doors and weatherproofing — we handle all the annoying to-dos around your home.",
     image: gateImg,
-    imageAlt: "Custom cedar gate and fence repair"
+    imageAlt: "Custom cedar gate and fence repair",
+    video: null,
   },
   {
     icon: Hammer,
     title: "Interior Renovations",
     description: "Small-to-medium remodeling projects to refresh bathrooms, closets, living spaces, or any room in need of an upgrade.",
-    image: null,
-    imageAlt: ""
+    image: bathroomImg,
+    imageAlt: "Bathroom remodel with designer wallpaper and beadboard wainscoting",
+    video: "/bathroom-remodel.mov",
   },
 ];
 
@@ -109,6 +116,18 @@ export function Services() {
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-2">{service.title}</h3>
                   <p className="text-muted-foreground leading-relaxed text-sm">{service.description}</p>
+                  {service.video && (
+                    <div className="mt-5 rounded-xl overflow-hidden border border-border">
+                      <video
+                        src={service.video}
+                        controls
+                        playsInline
+                        muted
+                        className="w-full h-auto"
+                        aria-label="Bathroom remodel project video"
+                      />
+                    </div>
+                  )}
                 </div>
               </motion.div>
             );
