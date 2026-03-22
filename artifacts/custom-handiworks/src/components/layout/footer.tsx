@@ -8,11 +8,18 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-12">
 
           <div className="space-y-4">
-            <img
-              src={logoImg}
-              alt="Custom Handiworks"
-              className="h-12 w-auto object-contain brightness-0 invert"
-            />
+            <div className="flex items-center gap-3">
+              <div className="bg-white rounded-lg p-1 shrink-0">
+                <img
+                  src={logoImg}
+                  alt="Custom Handiworks"
+                  className="h-8 w-auto object-contain"
+                />
+              </div>
+              <span className="font-display font-bold text-lg text-white tracking-tight leading-tight">
+                Custom Handiworks
+              </span>
+            </div>
             <p className="text-secondary-foreground/70 text-sm leading-relaxed">
               Denver's choice for expert carpentry and reliable handyman services. 22 years of building things right.
             </p>
@@ -39,7 +46,7 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="font-display font-semibold text-lg text-white">Our Services</h3>
             <ul className="space-y-2">
-              {['Custom Carpentry', 'Custom Furniture', 'Trim & Molding', 'Sliding Barn Doors', 'Home Repairs', 'Interior Renovations'].map((s) => (
+              {['Custom Carpentry', 'Custom Furniture', 'Trim & Molding', 'Furniture Assembly & Door Installation', 'Home Repairs', 'Interior Renovations'].map((s) => (
                 <li key={s}>
                   <a
                     href="#services"
