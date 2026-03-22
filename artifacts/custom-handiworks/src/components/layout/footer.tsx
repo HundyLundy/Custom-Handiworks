@@ -1,5 +1,5 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import logoImg from "@assets/ED4E087E-5319-4333-A9D9-B6D892B5F7B1_1774146982330.png";
+import logoImg from "@assets/A63BEBB4-33FF-4129-87C3-0D140E3204BA_1774146982330.png";
 
 export function Footer() {
   return (
@@ -9,13 +9,11 @@ export function Footer() {
 
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="bg-white rounded-lg p-1 shrink-0">
-                <img
-                  src={logoImg}
-                  alt="Custom Handiworks"
-                  className="h-8 w-auto object-contain"
-                />
-              </div>
+              <img
+                src={logoImg}
+                alt="Custom Handiworks"
+                className="h-10 w-auto object-contain invert"
+              />
               <span className="font-display font-bold text-lg text-white tracking-tight leading-tight">
                 Custom Handiworks
               </span>
