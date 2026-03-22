@@ -15,7 +15,7 @@ router.post("/contact", async (req, res) => {
   const { name, email, phone, service, message } = parseResult.data;
 
   try {
-    const toEmail = process.env.CONTACT_EMAIL || "info@customhandiworks.com";
+    const toEmail = process.env.CONTACT_EMAIL || "hunter@customhandiworks.com";
     const smtpHost = process.env.SMTP_HOST;
     const smtpPort = process.env.SMTP_PORT ? Number(process.env.SMTP_PORT) : 587;
     const smtpUser = process.env.SMTP_USER;

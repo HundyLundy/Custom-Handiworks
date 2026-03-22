@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Instagram } from "lucide-react";
 import logoImg from "@assets/A63BEBB4-33FF-4129-87C3-0D140E3204BA_1774146982330.png";
 
 export function Footer() {
@@ -37,6 +37,17 @@ export function Footer() {
               <li className="flex items-center gap-3 text-secondary-foreground/80 text-sm">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
                 <a href="mailto:hunter@customhandiworks.com" className="hover:text-white transition-colors">hunter@customhandiworks.com</a>
+              </li>
+              <li className="flex items-center gap-3 text-secondary-foreground/80 text-sm">
+                <Instagram className="w-5 h-5 text-primary shrink-0" />
+                <a
+                  href="https://www.instagram.com/custom_handiworks/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  @custom_handiworks
+                </a>
               </li>
             </ul>
           </div>
