@@ -9,6 +9,7 @@ import { Testimonials } from "./testimonials";
 import { Contact } from "./contact";
 import { Tips } from "./tips";
 import { Gallery } from "./gallery";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -22,6 +23,21 @@ export default function Home() {
         <WhyUs />
         <ServiceArea />
         <Gallery />
+
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="py-8 text-center bg-background"
+        >
+          <p className="text-sm text-muted-foreground">
+            Got a home project in Denver?{" "}
+            <a href="#contact" className="text-primary font-semibold hover:underline">
+              Get a free estimate →
+            </a>
+          </p>
+        </motion.div>
+
         <Testimonials />
         <Tips />
         <Contact />
