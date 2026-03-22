@@ -15,7 +15,8 @@ import commercialDeckImg from "@assets/Image_3-21-26_at_11.10_PM_1774157483012.p
 import tableSawImg from "@assets/Image_3-21-26_at_11.06_PM_(1)_1774157483013.png";
 import porchRailingImg from "@assets/Image_3-21-26_at_11.05_PM_1774157483013.png";
 import interiorRailingImg from "@assets/Image_3-21-26_at_11.05_PM_(1)_1774157483013.png";
-import barBuildImg from "@assets/Image_3-21-26_at_11.13_PM_(1)_1774157483011.png";
+import barBeforeImg from "@assets/Image_3-21-26_at_11.13_PM_(1)_1774157483011.png";
+import barAfterImg from "@assets/Image_3-21-26_at_11.13_PM_1774157483011.png";
 import picnicTableImg from "@assets/Image_3-21-26_at_11.11_PM_(1)_1774157483012.png";
 import gardenBedImg from "@assets/Image_3-21-26_at_11.04_PM_1774157549012.png";
 import shoeStorageImg from "@assets/Image_3-21-26_at_11.08_PM_1774157483013.png";
@@ -35,7 +36,6 @@ const photos = [
   { src: tableSawImg, alt: "Precision woodworking at the table saw", label: "Precision Craftsmanship" },
   { src: porchRailingImg, alt: "Custom porch deck with horizontal metal railing", label: "Porch & Railing" },
   { src: interiorRailingImg, alt: "Custom interior horizontal stair railing system", label: "Interior Railing System" },
-  { src: barBuildImg, alt: "Custom bar build with curved top and LED accent lighting", label: "Custom Bar Build" },
   { src: picnicTableImg, alt: "Large custom cedar picnic table", label: "Custom Picnic Table" },
   { src: gardenBedImg, alt: "Custom cedar raised garden bed planter", label: "Raised Garden Bed" },
   { src: shoeStorageImg, alt: "Custom white built-in shoe storage cabinet", label: "Custom Storage Built-In" },
@@ -86,10 +86,46 @@ export function Gallery() {
             transition={{ delay: 0.1 }}
             className="text-lg text-muted-foreground"
           >
-            Every project is built to last. Browse a sample of what we've crafted for homeowners across Denver.
+            A sample of what we've built — for homeowners and business owners across Austin, Denver, and beyond.
           </motion.p>
         </div>
 
+        {/* Before / After feature card */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-6 rounded-2xl overflow-hidden border border-border shadow-sm"
+        >
+          <div className="grid grid-cols-2">
+            <div className="relative">
+              <img
+                src={barBeforeImg}
+                alt="Custom bar build in progress — raw wood rounded top with spindle base"
+                className="w-full h-72 object-cover object-center"
+              />
+              <div className="absolute top-3 left-3 bg-stone-900/80 text-white text-xs font-bold px-3 py-1 rounded-full tracking-widest uppercase">
+                Before
+              </div>
+            </div>
+            <div className="relative">
+              <img
+                src={barAfterImg}
+                alt="Finished custom reception desk — green fabric wrap with white quartz top"
+                className="w-full h-72 object-cover object-center"
+              />
+              <div className="absolute top-3 right-3 bg-primary/90 text-primary-foreground text-xs font-bold px-3 py-1 rounded-full tracking-widest uppercase">
+                After
+              </div>
+            </div>
+          </div>
+          <div className="bg-white px-6 py-4 border-t border-border">
+            <p className="text-sm font-semibold text-foreground">Custom Reception Desk Build</p>
+            <p className="text-xs text-muted-foreground mt-0.5">Raw wood bar frame → finished fabric-wrapped reception desk with quartz top</p>
+          </div>
+        </motion.div>
+
+        {/* Masonry photo grid */}
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
           {photos.map((photo, i) => (
             <motion.div
@@ -116,6 +152,7 @@ export function Gallery() {
         </div>
       </div>
 
+      {/* Lightbox */}
       <AnimatePresence>
         {lightboxIndex !== null && (
           <motion.div
