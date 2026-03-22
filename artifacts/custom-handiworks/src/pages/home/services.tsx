@@ -138,6 +138,12 @@ export function Services() {
               className="w-full h-auto block"
               aria-label="Sister's bathroom remodel project by Custom Handiworks"
             />
+            <div className="bg-white px-6 py-4 border-t border-border">
+              <p className="text-sm font-semibold text-foreground">A closet turned nursery bathroom — for a very special reason</p>
+              <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
+                Hunter's little sister is expecting a baby girl in late July, so we converted a tiny closet into a full bathroom right off the nursery. The pink? That was the obvious choice.
+              </p>
+            </div>
           </div>
         </motion.div>
 
