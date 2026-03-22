@@ -22,21 +22,21 @@ import gardenBedImg from "@assets/Image_3-21-26_at_11.04_PM_1774157549012.png";
 import shoeStorageImg from "@assets/Image_3-21-26_at_11.08_PM_1774157483013.png";
 import hunterFlooringImg from "@assets/Image_3-21-26_at_11.12_PM_(1)_1774157483011.png";
 
-const photos = [
+const photos: { src: string; alt: string; label: string; cropBottom?: boolean }[] = [
   { src: staircaseImg, alt: "Custom oak staircase with hand-forged iron balusters", label: "Custom Staircase" },
-  { src: liveEdgeShelvesImg, alt: "Live edge floating shelves with steel brackets", label: "Live Edge Shelves" },
+  { src: liveEdgeShelvesImg, alt: "Live edge floating shelves with steel brackets", label: "Live Edge Shelves", cropBottom: true },
   { src: cedarBenchImg, alt: "Custom redwood outdoor garden bench", label: "Redwood Garden Bench" },
   { src: blueBookshelvesImg, alt: "Custom built-in blue bookshelves with window seat", label: "Built-In Bookshelves" },
   { src: bathroomTileImg, alt: "Bathroom renovation with striped subway tile and custom shower niche", label: "Bathroom Renovation" },
-  { src: butcherBlockImg, alt: "Custom butcher block kitchen countertop", label: "Butcher Block Countertop" },
-  { src: walkInClosetImg, alt: "Custom built-in walk-in closet system", label: "Walk-In Closet Built-In" },
+  { src: butcherBlockImg, alt: "Custom butcher block kitchen countertop", label: "Butcher Block Countertop", cropBottom: true },
+  { src: walkInClosetImg, alt: "Custom built-in walk-in closet system", label: "Walk-In Closet Built-In", cropBottom: true },
   { src: commercialDeckImg, alt: "Commercial deck with custom built-in benches", label: "Deck & Built-In Seating" },
   { src: tableSawImg, alt: "Precision woodworking at the table saw", label: "Precision Craftsmanship" },
   { src: porchRailingImg, alt: "Custom porch deck with horizontal metal railing", label: "Porch & Railing" },
   { src: interiorRailingImg, alt: "Custom interior horizontal stair railing system", label: "Interior Railing System" },
   { src: picnicTableImg, alt: "Large custom cedar picnic table", label: "Custom Picnic Table" },
   { src: gardenBedImg, alt: "Custom cedar raised garden bed planter", label: "Raised Garden Bed" },
-  { src: shoeStorageImg, alt: "Custom white built-in shoe storage cabinet", label: "Custom Storage Built-In" },
+  { src: shoeStorageImg, alt: "Custom white built-in shoe storage cabinet", label: "Custom Storage Built-In", cropBottom: true },
   { src: hunterFlooringImg, alt: "Hunter cutting flooring pieces with precision", label: "Hardwood Floor Installation" },
 ];
 
@@ -137,6 +137,9 @@ export function Gallery() {
                 alt="Custom reclaimed wood range hood built in Denver"
                 className="w-full h-72 object-cover object-center"
               />
+              <div className="absolute bottom-3 left-3 bg-stone-900/75 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                Range Hood
+              </div>
             </div>
             <div className="relative">
               <img
@@ -144,6 +147,9 @@ export function Gallery() {
                 alt="Kitchen island wrapped in the same reclaimed wood as the range hood"
                 className="w-full h-72 object-cover object-center"
               />
+              <div className="absolute bottom-3 right-3 bg-stone-900/75 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                Island Base
+              </div>
             </div>
           </div>
           <div className="bg-white px-6 py-4 border-t border-border">
@@ -167,7 +173,7 @@ export function Gallery() {
               <img
                 src={photo.src}
                 alt={photo.alt}
-                className="w-full h-auto block group-hover:scale-105 transition-transform duration-500"
+                className={`w-full h-auto block group-hover:scale-105 transition-transform duration-500${photo.cropBottom ? " mb-[-28px]" : ""}`}
               />
               <div className="absolute inset-0 bg-stone-950/0 group-hover:bg-stone-950/40 transition-colors duration-300 flex items-end p-4">
                 <span className="text-white text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0 transition-transform">
