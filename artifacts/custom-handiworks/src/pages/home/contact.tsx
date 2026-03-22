@@ -51,9 +51,9 @@ export function Contact() {
             <div className="absolute inset-0 bg-stone-900/30" />
             <div className="absolute bottom-0 left-0 right-0 p-12 bg-gradient-to-t from-stone-950/90 to-transparent">
               <p className="text-white text-xl font-display font-medium leading-relaxed italic">
-                "Good craftsmanship is the intersection of passion, precision, and patience."
+                "He who works with his hands is a laborer. He who works with his hands and his head is a craftsman. He who works with his hands and his head and his heart is an artist."
               </p>
-              <p className="text-white/60 text-sm mt-3">— Hunter, Custom Handiworks</p>
+              <p className="text-white/60 text-sm mt-3">― Author in Dispute</p>
             </div>
           </div>
 
