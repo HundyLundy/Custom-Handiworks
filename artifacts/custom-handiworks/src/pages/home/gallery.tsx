@@ -119,7 +119,7 @@ export function Gallery() {
           </div>
           <div className="bg-white px-6 py-4 border-t border-border">
             <p className="text-sm font-semibold text-foreground">Custom Reception Desk Built for <a href="https://www.lovebeehive.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">BeeHive</a></p>
-            <p className="text-xs text-muted-foreground mt-0.5">Raw wood frame with rounded top → finished fabric-wrapped reception desk with painted wood top</p>
+            <p className="text-xs text-muted-foreground mt-0.5">Raw wood frame with rounded top → finished carpet-wrapped reception desk with bead board backing and painted wood top</p>
           </div>
         </motion.div>
 
@@ -154,7 +154,7 @@ export function Gallery() {
           </div>
           <div className="bg-white px-6 py-4 border-t border-border">
             <p className="text-sm font-semibold text-foreground">One kitchen, one wood — two statement pieces</p>
-            <p className="text-xs text-muted-foreground mt-0.5">Both pieces use reclaimed wood salvaged from an old barn in North Dakota. Same house, same material, intentionally matched.</p>
+            <p className="text-xs text-muted-foreground mt-0.5">Both pieces use reclaimed wood salvaged from an old barn in North Dakota. Same house, same material, intentionally matched. (Pictured unfinished — right after the build.)</p>
           </div>
         </motion.div>
 
