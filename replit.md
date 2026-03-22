@@ -21,7 +21,8 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 ```text
 artifacts-monorepo/
 ├── artifacts/              # Deployable applications
-│   └── api-server/         # Express API server
+│   ├── api-server/         # Express API server
+│   └── custom-handiworks/  # Custom Handiworks website (React + Vite)
 ├── lib/                    # Shared libraries
 │   ├── api-spec/           # OpenAPI spec + Orval codegen config
 │   ├── api-client-react/   # Generated React Query hooks
@@ -34,6 +35,32 @@ artifacts-monorepo/
 ├── tsconfig.json           # Root TS project references
 └── package.json            # Root package with hoisted devDeps
 ```
+
+## Applications
+
+### Custom Handiworks Website (`artifacts/custom-handiworks`)
+
+A professional carpentry & handyman business website for Custom Handiworks, located at 761 Eudora Street, Denver, CO. Serves an 8-mile radius in the Denver metro area.
+
+**Features:**
+- Full SEO optimization for local Denver searches (meta tags, OpenGraph, LocalBusiness JSON-LD schema)
+- Hero section with workshop background image
+- Services section: Custom Carpentry, Deck Building, Door & Window Installation, Trim & Molding, Furniture Assembly, Home Repairs, Fence Installation, Interior Renovations
+- "Why Choose Us" trust section
+- Service area section listing Denver neighborhoods
+- Customer testimonials
+- Contact form (POST /api/contact) with react-hook-form + Zod validation
+- Mobile-responsive design
+- Warm amber/craftsman color palette
+
+**Contact form email configuration** (optional env vars for SMTP):
+- `CONTACT_EMAIL` - destination email (default: info@customhandiworks.com)
+- `SMTP_HOST` - SMTP server hostname
+- `SMTP_PORT` - SMTP port (default: 587)
+- `SMTP_USER` - SMTP username
+- `SMTP_PASS` - SMTP password
+
+If SMTP is not configured, form submissions are logged server-side.
 
 ## TypeScript & Composite Projects
 
@@ -56,8 +83,8 @@ Express 5 API server. Routes live in `src/routes/` and use `@workspace/api-zod` 
 
 - Entry: `src/index.ts` — reads `PORT`, starts Express
 - App setup: `src/app.ts` — mounts CORS, JSON/urlencoded parsing, routes at `/api`
-- Routes: `src/routes/index.ts` mounts sub-routers; `src/routes/health.ts` exposes `GET /health` (full path: `/api/health`)
-- Depends on: `@workspace/db`, `@workspace/api-zod`
+- Routes: `src/routes/index.ts` mounts sub-routers; `src/routes/health.ts` exposes `GET /health` (full path: `/api/health`); `src/routes/contact.ts` exposes `POST /contact` (full path: `/api/contact`)
+- Depends on: `@workspace/db`, `@workspace/api-zod`, `nodemailer`
 - `pnpm --filter @workspace/api-server run dev` — run the dev server
 - `pnpm --filter @workspace/api-server run build` — production esbuild bundle (`dist/index.cjs`)
 - Build bundles an allowlist of deps (express, cors, pg, drizzle-orm, zod, etc.) and externalizes the rest
@@ -85,11 +112,11 @@ Run codegen: `pnpm --filter @workspace/api-spec run codegen`
 
 ### `lib/api-zod` (`@workspace/api-zod`)
 
-Generated Zod schemas from the OpenAPI spec (e.g. `HealthCheckResponse`). Used by `api-server` for response validation.
+Generated Zod schemas from the OpenAPI spec (e.g. `HealthCheckResponse`, `SubmitContactBody`). Used by `api-server` for response validation.
 
 ### `lib/api-client-react` (`@workspace/api-client-react`)
 
-Generated React Query hooks and fetch client from the OpenAPI spec (e.g. `useHealthCheck`, `healthCheck`).
+Generated React Query hooks and fetch client from the OpenAPI spec (e.g. `useHealthCheck`, `useSubmitContact`).
 
 ### `scripts` (`@workspace/scripts`)
 

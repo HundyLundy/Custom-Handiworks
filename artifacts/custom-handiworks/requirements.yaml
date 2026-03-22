@@ -1,0 +1,18 @@
+packages:
+  "framer-motion": "For premium smooth scroll and entry animations across the landing page"
+  "react-helmet-async": "For injecting critical local SEO meta tags and schema markup"
+  "@hookform/resolvers": "For Zod validation integration with react-hook-form"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility to cleanly merge Tailwind CSS classes"
+
+images:
+  - path: "artifacts/custom-handiworks/public/images/logo.png"
+    description: "A professional, minimalist, and sturdy logo mark for a carpentry and handyman business named 'Custom Handiworks'. Warm amber and charcoal colors. Simple wood grain or subtle tool integration, clean modern lines."
+    aspect_ratio: "1:1"
+  - path: "artifacts/custom-handiworks/public/images/hero-texture.png"
+    description: "Subtle, premium dark wood grain texture, abstract and blurred, perfect for a dark warm background overlay."
+    aspect_ratio: "16:9"
+
+notes:
+  - "Assuming shadcn UI components (button, input, textarea, etc.) exist in src/components/ui/ but will provide robust inline styled fallbacks if they differ."
+  - "Contact form POSTs to /api/contact using the generated useSubmitContact hook from @workspace/api-client-react"
