@@ -4,21 +4,24 @@ import { Star } from "lucide-react";
 export function Testimonials() {
   const reviews = [
     {
-      name: "Paul M.",
-      location: "Park Hill, Denver",
-      text: "Hunter built a beautiful gate for me — cedar, solid as a rock, and it looks amazing. He came out for the quote the same week and had it done faster than expected. Super professional, great communicator. Will definitely hire again for future projects.",
+      name: "Holden P.",
+      location: "Englewood, CO",
+      date: "February 2026",
+      text: "Very helpful and quick to respond! Hunter was able to assess the problem with my dryer quickly and had the new part installed the same day. Highly recommend!",
       rating: 5
     },
     {
-      name: "Jessica T.",
-      location: "Congress Park, Denver",
-      text: "I had Hunter install crown molding and new baseboards throughout my entire first floor. The detail work is flawless — perfectly mitered corners, no gaps, painted and ready to go. You can tell he takes real pride in his craft. Highly recommend for any carpentry work.",
+      name: "Maura A.",
+      location: "Southwest Denver, CO",
+      date: "February 2026",
+      text: "Hunter completely rebuilt my wood gate after years of sagging and sticking — a few big wind gusts were the final straw. The new gate is solid, perfectly aligned, and opens and closes smoothly. He did great work at a fair price and clearly takes pride in doing it right. Highly recommend.",
       rating: 5
     },
     {
-      name: "Mike & Sandra R.",
-      location: "Cherry Creek, Denver",
-      text: "Hunter built us a custom banquette and dining table for our breakfast nook. It fits perfectly, the walnut top is gorgeous, and the whole thing feels like it belongs in a high-end restaurant. We've gotten so many compliments. Worth every penny.",
+      name: "Stevie G.",
+      location: "Denver, CO",
+      date: "February 2026",
+      text: "Hunter was wonderful in rebuilding my wooden back gate promptly and with attention to detail. My new gate is much sturdier and I will definitely be hiring Hunter again in the future.",
       rating: 5
     }
   ];
@@ -61,6 +64,7 @@ export function Testimonials() {
               <div className="mt-auto pt-4 border-t border-border">
                 <p className="font-bold text-foreground">{review.name}</p>
                 <p className="text-sm text-muted-foreground">{review.location}</p>
+                <p className="text-xs text-muted-foreground/60 mt-0.5">{review.date}</p>
               </div>
               <div className="absolute top-6 right-8 text-primary/10 font-display text-8xl leading-none font-bold select-none">
                 "

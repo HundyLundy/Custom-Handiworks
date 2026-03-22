@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Ruler, PaintRoller, Sofa, Wrench, Hammer, Home } from "lucide-react";
 import banquetteImg from "@assets/6672B2C3-361B-4E11-A962-1B0CD6DCDE74_1774146982331.jpeg";
 import tableImg from "@assets/B0F4E4AD-E0D1-4265-BC80-4B8029C501A7_1774146982332.jpeg";
-import barnDoorsImg from "@assets/IMG_0753_1774146982330.jpeg";
+import barnDoorsImg from "@assets/IMG_0755_1774146982330.jpeg";
 import trimImg from "@assets/IMG_0596_1774146982331.jpeg";
 import gateImg from "@assets/IMG_0788_1774146982326.jpeg";
 
@@ -30,10 +30,10 @@ const primaryServices = [
   },
   {
     icon: Sofa,
-    title: "Sliding Barn Doors",
-    description: "Custom-built interior barn doors and hardware installation. A stunning upgrade to any room.",
+    title: "Furniture Assembly & Door Installation",
+    description: "Flat-pack furniture assembled correctly, plus interior door installation and hardware — done right the first time.",
     image: barnDoorsImg,
-    imageAlt: "Custom sliding barn doors installed in Denver home"
+    imageAlt: "Interior door installation in Denver home"
   },
   {
     icon: Wrench,
@@ -45,7 +45,7 @@ const primaryServices = [
   {
     icon: Hammer,
     title: "Interior Renovations",
-    description: "Small-to-medium remodeling projects to refresh closets, living spaces, or any room in need of an upgrade.",
+    description: "Small-to-medium remodeling projects to refresh bathrooms, closets, living spaces, or any room in need of an upgrade.",
     image: null,
     imageAlt: ""
   },

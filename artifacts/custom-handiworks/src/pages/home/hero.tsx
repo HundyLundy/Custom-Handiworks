@@ -32,7 +32,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-[1.1] mb-6"
           >
-            Denver's Trusted <span className="text-primary">Carpentry</span> & Handyman Experts
+            Over 22 Years of <span className="text-primary">Craftsmanship</span> in Denver
           </motion.h1>
 
           <motion.p
@@ -41,7 +41,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-white/80 leading-relaxed mb-8 max-w-2xl"
           >
-            From custom woodwork and built-in furniture to trim, molding, and everyday home repairs — we bring 22 years of precision and craftsmanship to every project in the Denver metro area.
+            Custom carpentry, built-in furniture, trim, molding, and everyday home repairs — all done with the kind of attention to detail that only comes from two decades of hands-on experience.
           </motion.p>
 
           <motion.div
@@ -73,7 +73,7 @@ export function Hero() {
           >
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-5 h-5 text-primary" />
-              <span>22 Years Experience</span>
+              <span className="text-white font-semibold">Local Denver Business</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-5 h-5 text-primary" />
@@ -81,7 +81,7 @@ export function Hero() {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-5 h-5 text-primary" />
-              <span>Local Denver Business</span>
+              <span>22 Years Experience</span>
             </div>
           </motion.div>
         </div>
