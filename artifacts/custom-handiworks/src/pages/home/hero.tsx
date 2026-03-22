@@ -41,7 +41,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-white/80 leading-relaxed mb-8 max-w-2xl"
           >
-            Custom carpentry, built-in furniture, trim, molding, and everyday home repairs — all done with the kind of attention to detail that only comes from two decades of hands-on experience.
+            Custom carpentry, built-in furniture, trim, molding, and everyday home repairs — all done with the attention to detail your home deserves.
           </motion.p>
 
           <motion.div
@@ -81,7 +81,7 @@ export function Hero() {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-5 h-5 text-primary" />
-              <span>22 Years Experience</span>
+              <span>Custom Work Welcome</span>
             </div>
           </motion.div>
         </div>

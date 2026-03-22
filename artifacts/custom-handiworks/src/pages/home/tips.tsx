@@ -82,7 +82,7 @@ export function Tips() {
             transition={{ delay: 0.1 }}
             className="text-lg text-muted-foreground"
           >
-            Denver homes face real challenges — altitude, dry air, dramatic seasons. Here's what 22 years of working on them has taught us.
+            Denver homes face real challenges — altitude, dry air, dramatic seasons. Here's what working on them has taught us.
           </motion.p>
         </div>
 

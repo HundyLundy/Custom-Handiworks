@@ -19,7 +19,7 @@ export function Footer() {
               </span>
             </div>
             <p className="text-secondary-foreground/70 text-sm leading-relaxed">
-              Denver's choice for expert carpentry and reliable handyman services. 22 years of building things right.
+              Denver's choice for expert carpentry and reliable handyman services. Built right, every time.
             </p>
           </div>
 
