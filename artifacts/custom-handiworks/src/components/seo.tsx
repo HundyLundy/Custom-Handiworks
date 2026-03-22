@@ -43,10 +43,10 @@ export function SEO({
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": [
-        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
       ],
-      "opens": "08:00",
-      "closes": "18:00"
+      "opens": "09:00",
+      "closes": "17:00"
     },
     "priceRange": "$$"
   };

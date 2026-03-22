@@ -86,7 +86,7 @@ export function Gallery() {
             transition={{ delay: 0.1 }}
             className="text-lg text-muted-foreground"
           >
-            A sample of what we've built — for homeowners and business owners across Austin, Denver, and beyond.
+            A sample of what we've built.
           </motion.p>
         </div>
 
