@@ -7,6 +7,7 @@ import { WhyUs } from "./why-us";
 import { ServiceArea } from "./service-area";
 import { Testimonials } from "./testimonials";
 import { Contact } from "./contact";
+import { Tips } from "./tips";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <WhyUs />
         <ServiceArea />
         <Testimonials />
+        <Tips />
         <Contact />
       </main>
 
