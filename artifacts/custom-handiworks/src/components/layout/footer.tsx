@@ -1,80 +1,74 @@
-import { MapPin, Phone, Mail, Clock, Hammer } from "lucide-react";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import logoImg from "@assets/ED4E087E-5319-4333-A9D9-B6D892B5F7B1_1774146982330.png";
 
 export function Footer() {
   return (
     <footer className="bg-secondary text-secondary-foreground pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-12">
-          
-          {/* Brand */}
+
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="bg-primary text-primary-foreground p-2 rounded-lg">
-                <Hammer className="w-5 h-5" />
-              </div>
-              <span className="font-display font-bold text-2xl tracking-tight text-white">
-                Custom<span className="text-primary">Handiworks</span>
-              </span>
-            </div>
+            <img
+              src={logoImg}
+              alt="Custom Handiworks"
+              className="h-12 w-auto object-contain brightness-0 invert"
+            />
             <p className="text-secondary-foreground/70 text-sm leading-relaxed">
-              Denver's premier choice for expert carpentry and reliable handyman services. We build trust through quality craftsmanship.
+              Denver's choice for expert carpentry and reliable handyman services. 22 years of building things right.
             </p>
           </div>
 
-          {/* Contact Info */}
           <div className="space-y-4">
             <h3 className="font-display font-semibold text-lg text-white">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-secondary-foreground/80 text-sm">
-                <MapPin className="w-5 h-5 text-primary shrink-0" />
-                <span>761 Eudora Street<br/>Denver, CO 8020</span>
+                <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                <span>Denver, CO</span>
               </li>
               <li className="flex items-center gap-3 text-secondary-foreground/80 text-sm">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                <span>(720) 555-0123</span>
+                <a href="tel:7209373003" className="hover:text-white transition-colors">(720) 937-3003</a>
               </li>
               <li className="flex items-center gap-3 text-secondary-foreground/80 text-sm">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <span>info@customhandiworks.com</span>
+                <a href="mailto:hunter@customhandiworks.com" className="hover:text-white transition-colors">hunter@customhandiworks.com</a>
               </li>
             </ul>
           </div>
 
-          {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="font-display font-semibold text-lg text-white">Quick Links</h3>
+            <h3 className="font-display font-semibold text-lg text-white">Our Services</h3>
             <ul className="space-y-2">
-              {['Services', 'Why Choose Us', 'Service Area', 'Testimonials', 'Get a Quote'].map((link) => (
-                <li key={link}>
-                  <a 
-                    href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
+              {['Custom Carpentry', 'Custom Furniture', 'Trim & Molding', 'Sliding Barn Doors', 'Home Repairs', 'Interior Renovations'].map((s) => (
+                <li key={s}>
+                  <a
+                    href="#services"
                     className="text-secondary-foreground/70 text-sm hover:text-primary transition-colors"
                   >
-                    {link}
+                    {s}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Hours */}
           <div className="space-y-4">
-            <h3 className="font-display font-semibold text-lg text-white">Business Hours</h3>
+            <h3 className="font-display font-semibold text-lg text-white">Hours</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-secondary-foreground/80 text-sm">
-                <Clock className="w-5 h-5 text-primary shrink-0" />
+                <Clock className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <div className="space-y-1">
-                  <div className="flex justify-between w-32">
-                    <span>Mon - Fri:</span>
-                    <span>8am - 6pm</span>
+                  <div className="flex justify-between gap-4">
+                    <span>Mon – Fri:</span>
+                    <span>8am – 6pm</span>
                   </div>
-                  <div className="flex justify-between w-32">
+                  <div className="flex justify-between gap-4">
                     <span>Saturday:</span>
-                    <span>9am - 4pm</span>
+                    <span>9am – 4pm</span>
                   </div>
-                  <div className="flex justify-between w-32">
+                  <div className="flex justify-between gap-4">
                     <span>Sunday:</span>
-                    <span>Closed</span>
+                    <span>By Request</span>
                   </div>
                 </div>
               </li>
@@ -88,7 +82,7 @@ export function Footer() {
             © {new Date().getFullYear()} Custom Handiworks. All rights reserved.
           </p>
           <p className="text-secondary-foreground/60 text-sm">
-            Serving Denver within an 8-mile radius.
+            Proudly serving Denver, CO and surrounding neighborhoods.
           </p>
         </div>
       </div>
