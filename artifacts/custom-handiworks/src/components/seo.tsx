@@ -18,14 +18,6 @@ export function SEO({
     "url": "https://customhandiworks.com",
     "telephone": "(720) 937-3004",
     "email": "hunter@customhandiworks.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "761 Eudora Street",
-      "addressLocality": "Denver",
-      "addressRegion": "CO",
-      "postalCode": "80220",
-      "addressCountry": "US"
-    },
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": 39.7294,
