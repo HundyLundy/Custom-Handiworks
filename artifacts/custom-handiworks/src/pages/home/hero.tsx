@@ -33,7 +33,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-[1.1] mb-6"
           >
-            We Fix the Problems <span className="text-primary">Other Contractors</span> Avoid
+            Precision Work. No Shortcuts. <span className="text-primary">Done Right</span> the First Time.
           </motion.h1>
 
           <motion.p
