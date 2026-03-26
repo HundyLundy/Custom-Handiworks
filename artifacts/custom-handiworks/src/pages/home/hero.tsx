@@ -33,7 +33,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-[1.1] mb-6"
           >
-            Bringing 22 Years of <span className="text-primary">Craftsmanship</span> to Denver
+            We Fix the Problems <span className="text-primary">Other Contractors</span> Avoid
           </motion.h1>
 
           <motion.p
@@ -42,7 +42,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-white/80 leading-relaxed mb-8 max-w-2xl"
           >
-            Custom carpentry, built-in furniture, trim, molding, and everyday home repairs — all done with the attention to detail your home deserves.
+            High-quality home repairs, custom carpentry, and precision installs — done right the first time. No runaround. No rework. Just clean, reliable results.
           </motion.p>
 
           <motion.div
@@ -55,7 +55,7 @@ export function Hero() {
               href="#contact"
               className="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-xl bg-primary text-primary-foreground shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
             >
-              Get a Free Quote
+              Request a Project Review
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
             <a

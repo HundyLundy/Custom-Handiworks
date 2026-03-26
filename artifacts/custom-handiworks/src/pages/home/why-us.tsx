@@ -27,17 +27,20 @@ export function WhyUs() {
               viewport={{ once: true }}
               className="text-3xl md:text-5xl font-display font-bold text-white mb-6"
             >
-              Why Choose Custom Handiworks?
+              Why Clients Choose Custom Handiworks
             </motion.h2>
-            <motion.p
+            <motion.ul
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-lg text-secondary-foreground/80 mb-8"
+              className="space-y-3 text-secondary-foreground/80 text-lg mb-8"
             >
-              Inviting someone into your home to work on it requires trust. We operate with total transparency, genuine craftsmanship, and a commitment to doing things right the first time — every time. We treat every Denver home like it's our own.
-            </motion.p>
+              <li className="flex items-start gap-2"><span className="text-primary mt-1">—</span> No shortcuts. Built to last.</li>
+              <li className="flex items-start gap-2"><span className="text-primary mt-1">—</span> Clear communication from start to finish.</li>
+              <li className="flex items-start gap-2"><span className="text-primary mt-1">—</span> We fix the root problem — not just the symptom.</li>
+              <li className="flex items-start gap-2"><span className="text-primary mt-1">—</span> Respect for your home and your time.</li>
+            </motion.ul>
 
             <motion.div
               initial={{ opacity: 0, x: -20 }}

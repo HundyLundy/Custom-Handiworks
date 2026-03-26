@@ -30,7 +30,7 @@ export function Contact() {
                 Get a Free Quote
               </h2>
               <p className="text-muted-foreground mb-8">
-                Ready to start your project? Fill out the form below and we'll get back to you within 24 hours to discuss details and scheduling.
+                Tell us what you're dealing with — we'll take it from there.
               </p>
 
               <div

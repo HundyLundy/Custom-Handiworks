@@ -30,6 +30,9 @@ export default function Home() {
           viewport={{ once: true }}
           className="py-8 text-center bg-background"
         >
+          <p className="text-sm text-muted-foreground max-w-lg mx-auto mb-2">
+            Most projects are assessed quickly and scheduled without long delays. You'll know what's happening and what it costs — before work begins.
+          </p>
           <p className="text-sm text-muted-foreground">
             Got a home project in Denver?{" "}
             <a href="#contact" className="text-primary font-semibold hover:underline">

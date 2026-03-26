@@ -84,7 +84,7 @@ export function Services() {
             transition={{ delay: 0.1 }}
             className="text-lg text-muted-foreground"
           >
-            We specialize in fine carpentry and handyman services — every job, big or small, gets the same skill and attention to detail.
+            Most jobs fall into one of three categories. If you're not sure, we'll figure it out quickly.
           </motion.p>
         </div>
 
