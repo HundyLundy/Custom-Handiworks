@@ -4,12 +4,12 @@ import { Footer } from "@/components/layout/footer";
 import { Hero } from "./hero";
 import { Services } from "./services";
 import { WhyUs } from "./why-us";
+import { BestFit } from "./best-fit";
 import { ServiceArea } from "./service-area";
 import { Testimonials } from "./testimonials";
 import { Contact } from "./contact";
 import { Tips } from "./tips";
 import { Gallery } from "./gallery";
-import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -21,26 +21,9 @@ export default function Home() {
         <Hero />
         <Services />
         <WhyUs />
+        <BestFit />
         <ServiceArea />
         <Gallery />
-
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="py-8 text-center bg-background"
-        >
-          <p className="text-sm text-muted-foreground max-w-lg mx-auto mb-2">
-            Most projects are assessed quickly and scheduled without long delays. You'll know what's happening and what it costs — before work begins.
-          </p>
-          <p className="text-sm text-muted-foreground">
-            Got a home project in Denver?{" "}
-            <a href="#contact" className="text-primary font-semibold hover:underline">
-              Get a free estimate →
-            </a>
-          </p>
-        </motion.div>
-
         <Testimonials />
         <Tips />
         <Contact />

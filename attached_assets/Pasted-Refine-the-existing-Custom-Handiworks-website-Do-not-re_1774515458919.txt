@@ -1,0 +1,118 @@
+Refine the existing Custom Handiworks website. Do not rebuild from scratch. Tighten the homepage, improve conversion, improve local SEO signals, and make the site feel more premium, concise, and high-trust.
+
+GOAL:
+Make the website feel like a high-end, problem-solving craftsman business, not a generic handyman site. Keep it clear, local, and conversion-focused.
+
+KEEP:
+- The clean modern layout
+- The headline style and stronger positioning
+- Free Estimates for now
+- The local Denver emphasis
+- The premium / precision tone
+- Avoid over-technical jargon
+
+UPDATE THE HERO SECTION:
+Keep the headline:
+“Precision Work. No Shortcuts. Done Right the First Time.”
+
+Replace the subheadline with:
+“We handle repairs, installs, and custom work—especially the jobs that weren’t done right the first time.”
+
+Add a short support line under the CTA:
+“Tell us what you’re dealing with—we’ll take it from there.”
+
+Keep primary CTA:
+“Request a Project Review”
+
+Keep secondary CTA:
+“View Our Work”
+
+REPLACE THE 3 QUICK TRUST ITEMS UNDER THE HERO:
+Current items feel too generic. Replace with:
+- Local Denver Craftsman
+- Free Estimates
+- Custom Work & Problem Solving
+
+TIGHTEN THE SERVICES SECTION:
+Reduce clutter and organize services into 3 clear buckets:
+1. Repairs & Problem Solving
+2. Precision Installations
+3. Custom Carpentry & Finish Work
+
+For each bucket, use short bullets and plain language. Avoid long paragraphs.
+Focus on the jobs that create the most trust and best fit:
+- doors
+- trim
+- built-ins
+- fixture installs
+- finish work
+- “fixing what was done wrong”
+
+ADD A DIFFERENTIATION SECTION:
+Title:
+“Why Clients Call Custom Handiworks”
+
+Use 4 short bullets:
+- We fix problems at the root, not just the surface
+- Clean, precise work that lasts
+- Clear communication from start to finish
+- Respect for your home, your time, and your budget
+
+ADD A “BEST FIT PROJECTS” SECTION:
+Title:
+“Where We’re the Best Fit”
+
+Short intro:
+“Some jobs need more than a basic handyman. These are the kinds of projects where our approach makes the biggest difference.”
+
+Bullets:
+- Repairs after poor previous work
+- Precision installs that need to look clean and last
+- Custom trim, built-ins, and finish carpentry
+- Punch-list and detail work before sale or move-in
+- Homeowners who want it done right the first time
+
+LOCAL SEO IMPROVEMENTS:
+Without making the copy spammy, work Denver and nearby neighborhoods/service areas naturally into:
+- homepage intro copy
+- service area section
+- image alt text
+- page titles and meta descriptions
+
+Create stronger local intent language such as:
+- “serving Denver and surrounding neighborhoods”
+- “custom carpentry and home repairs in Denver”
+- “precision handyman and finish work in Denver”
+
+Make each major section easy to scan with strong headings and shorter paragraphs.
+
+PROOF / TRUST IMPROVEMENTS:
+Improve the gallery section so it feels more premium.
+If possible, add short captions under project photos such as:
+- “custom trim repair”
+- “fixture install”
+- “finish carpentry detail”
+- “flooring layout and cut work”
+
+If there is a reviews/testimonials section, make it more visible and confidence-building.
+If there are no real reviews yet, create a clean placeholder structure for them without fake content.
+
+SEO / STRUCTURE:
+- Keep one strong H1 on the homepage
+- Tighten page title and meta description for local search intent
+- Keep service-related sections clear and easy for Google to understand
+- Do not overdo FAQ schema or FAQ-heavy design
+- Make gallery and service sections more useful than fluffy
+
+TONE:
+- Confident
+- Clear
+- Premium
+- Practical
+- No corporate fluff
+- No cheesy contractor clichés
+
+IMPORTANT:
+Do not make the site feel like a generic handyman template.
+Make it feel like a trusted local craftsman who solves expensive, annoying home problems correctly.
+Keep the design visually strong, but reduce unnecessary words by about 20%.

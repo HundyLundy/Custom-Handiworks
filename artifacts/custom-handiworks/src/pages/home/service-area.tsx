@@ -20,18 +20,18 @@ export function ServiceArea() {
               <MapPin className="w-5 h-5" />
               <span>Local Denver Coverage</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-              Serving Denver's Best Neighborhoods
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+              Custom Carpentry & Home Repairs in Denver
             </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              We focus our services locally so we can offer fast response times, flexible scheduling, and the kind of personal attention that bigger companies can't provide.
+            <p className="text-base text-muted-foreground mb-8">
+              We work locally so we can show up fast, schedule flexibly, and give every project the personal attention it deserves. No long waitlists, no runaround — just a craftsman who knows Denver homes.
             </p>
 
             <h3 className="font-semibold text-foreground mb-4">Neighborhoods We Serve:</h3>
             <ul className="grid grid-cols-2 gap-y-2.5 gap-x-4">
               {neighborhoods.map((hood) => (
                 <li key={hood} className="flex items-center gap-2 text-muted-foreground text-sm">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#41b75b] shrink-0" />
                   {hood}
                 </li>
               ))}
@@ -42,7 +42,7 @@ export function ServiceArea() {
           <div className="lg:w-1/2 relative min-h-[400px]">
             <img
               src={gateImg}
-              alt="Custom modern slatted fence gate installation"
+              alt="Custom modern slatted cedar fence gate installation in Denver, CO"
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-primary/10 mix-blend-overlay" />

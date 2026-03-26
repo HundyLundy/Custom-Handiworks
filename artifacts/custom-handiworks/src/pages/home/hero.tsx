@@ -8,7 +8,7 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         <img
           src={hunterFlooringImg}
-          alt="Hunter cutting flooring pieces with precision"
+          alt="Hunter cutting flooring pieces with precision — custom carpentry and hardwood floor installation in Denver, CO"
           className="w-full h-full object-cover object-top"
         />
         <div className="absolute inset-0 bg-stone-900/75" />
@@ -23,7 +23,7 @@ export function Hero() {
             transition={{ duration: 0.6 }}
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/25 border border-primary/40 text-primary-foreground backdrop-blur-md mb-6"
           >
-            <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse" />
+            <span className="flex h-2 w-2 rounded-full bg-[#41b75b] animate-pulse" />
             <span className="text-sm font-medium text-white/90">Serving Denver & Surrounding Neighborhoods</span>
           </motion.div>
 
@@ -42,7 +42,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-white/80 leading-relaxed mb-8 max-w-2xl"
           >
-            High-quality home repairs, custom carpentry, and precision installs — done right the first time. No runaround. No rework. Just clean, reliable results.
+            We handle repairs, installs, and custom work — especially the jobs that weren't done right the first time.
           </motion.p>
 
           <motion.div
@@ -59,22 +59,31 @@ export function Hero() {
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="#services"
+              href="#gallery"
               className="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-xl bg-white/10 text-white hover:bg-white/20 backdrop-blur-md border border-white/20 transition-all duration-300"
             >
               View Our Work
             </a>
           </motion.div>
 
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.45 }}
+            className="mt-4 text-sm text-white/50"
+          >
+            Tell us what you're dealing with — we'll take it from there.
+          </motion.p>
+
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="mt-12 flex flex-wrap items-center gap-6 text-sm font-medium text-white/70"
+            className="mt-10 flex flex-wrap items-center gap-6 text-sm font-medium text-white/70"
           >
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-5 h-5 text-[#41b75b]" />
-              <span className="text-white font-semibold">Local Denver Business</span>
+              <span className="text-white font-semibold">Local Denver Craftsman</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-5 h-5 text-[#41b75b]" />
@@ -82,7 +91,7 @@ export function Hero() {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-5 h-5 text-[#41b75b]" />
-              <span>Custom Work Welcome</span>
+              <span>Custom Work &amp; Problem Solving</span>
             </div>
           </motion.div>
         </div>

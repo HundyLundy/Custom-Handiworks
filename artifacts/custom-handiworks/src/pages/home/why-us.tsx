@@ -4,7 +4,7 @@ import { Clock, MapPin, Award, ThumbsUp, Zap, Star } from "lucide-react";
 export function WhyUs() {
   const reasons = [
     { icon: Clock, title: "22 Years of Experience", desc: "Two decades of honing the craft — every joint, every cut done right." },
-    { icon: MapPin, title: "Local Denver Expert", desc: "We know Denver homes inside and out. No drive fees, fast response." },
+    { icon: MapPin, title: "Local Denver Craftsman", desc: "We know Denver homes inside and out. No drive fees, fast response." },
     { icon: Award, title: "Quality Guaranteed", desc: "We don't leave until the work is something we're proud of." },
     { icon: Star, title: "Custom Work Welcome", desc: "Bring us your vision. If you can sketch it, we can build it." },
     { icon: ThumbsUp, title: "Free Estimates", desc: "Transparent, upfront pricing. No surprises on the final bill." },
@@ -27,19 +27,31 @@ export function WhyUs() {
               viewport={{ once: true }}
               className="text-3xl md:text-5xl font-display font-bold text-white mb-6"
             >
-              Why Clients Choose Custom Handiworks
+              Why Clients Call <span className="text-[#41b75b]">Custom Handiworks</span>
             </motion.h2>
             <motion.ul
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="space-y-3 text-secondary-foreground/80 text-lg mb-8"
+              className="space-y-4 text-secondary-foreground/80 text-lg mb-8"
             >
-              <li className="flex items-start gap-2"><span className="text-[#41b75b] mt-1 font-bold">—</span> No shortcuts. Built to last.</li>
-              <li className="flex items-start gap-2"><span className="text-[#41b75b] mt-1 font-bold">—</span> Clear communication from start to finish.</li>
-              <li className="flex items-start gap-2"><span className="text-[#41b75b] mt-1 font-bold">—</span> We fix the root problem — not just the symptom.</li>
-              <li className="flex items-start gap-2"><span className="text-[#41b75b] mt-1 font-bold">—</span> Respect for your home and your time.</li>
+              <li className="flex items-start gap-3">
+                <span className="text-[#41b75b] mt-1 font-bold shrink-0">—</span>
+                We fix problems at the root, not just the surface
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-[#41b75b] mt-1 font-bold shrink-0">—</span>
+                Clean, precise work that lasts
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-[#41b75b] mt-1 font-bold shrink-0">—</span>
+                Clear communication from start to finish
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-[#41b75b] mt-1 font-bold shrink-0">—</span>
+                Respect for your home, your time, and your budget
+              </li>
             </motion.ul>
 
             <motion.div
@@ -52,12 +64,12 @@ export function WhyUs() {
                 href="#contact"
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-xl bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-all duration-300"
               >
-                Schedule Your Project
+                Request a Project Review
               </a>
             </motion.div>
           </div>
 
-          <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-5">
             {reasons.map((reason, idx) => (
               <motion.div
                 key={reason.title}
@@ -67,8 +79,8 @@ export function WhyUs() {
                 transition={{ delay: 0.1 * idx }}
                 className="bg-white/5 border border-white/10 backdrop-blur-sm p-6 rounded-2xl flex items-start gap-4 hover:bg-white/10 transition-colors duration-300"
               >
-                <div className="bg-primary/20 p-3 rounded-lg text-primary shrink-0">
-                  <reason.icon className="w-6 h-6" />
+                <div className="bg-[#41b75b]/20 p-3 rounded-lg text-[#41b75b] shrink-0">
+                  <reason.icon className="w-5 h-5" />
                 </div>
                 <div>
                   <h4 className="font-bold text-white mb-1">{reason.title}</h4>
@@ -77,18 +89,6 @@ export function WhyUs() {
               </motion.div>
             ))}
           </div>
-
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-center text-sm text-secondary-foreground/60 mt-10"
-          >
-            Got a home project in Denver?{" "}
-            <a href="#contact" className="text-primary-foreground font-semibold hover:underline">
-              Get a free estimate →
-            </a>
-          </motion.p>
 
         </div>
       </div>
