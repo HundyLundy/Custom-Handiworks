@@ -75,7 +75,7 @@ export function Gallery() {
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-display font-bold text-foreground mb-4"
           >
-            Our <span className="text-primary">Work</span>
+            Our <span className="text-[#41b75b]">Work</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

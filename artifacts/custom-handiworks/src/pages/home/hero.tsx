@@ -33,7 +33,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-[1.1] mb-6"
           >
-            Precision Work. No Shortcuts. <span className="text-primary">Done Right</span> the First Time.
+            Precision Work. No Shortcuts. <span className="text-[#41b75b]">Done Right</span> the First Time.
           </motion.h1>
 
           <motion.p
@@ -73,15 +73,15 @@ export function Hero() {
             className="mt-12 flex flex-wrap items-center gap-6 text-sm font-medium text-white/70"
           >
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-primary" />
+              <CheckCircle2 className="w-5 h-5 text-[#41b75b]" />
               <span className="text-white font-semibold">Local Denver Business</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-primary" />
+              <CheckCircle2 className="w-5 h-5 text-[#41b75b]" />
               <span>Free Estimates</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-primary" />
+              <CheckCircle2 className="w-5 h-5 text-[#41b75b]" />
               <span>Custom Work Welcome</span>
             </div>
           </motion.div>

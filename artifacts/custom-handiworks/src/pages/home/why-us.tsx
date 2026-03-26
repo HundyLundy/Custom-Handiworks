@@ -36,10 +36,10 @@ export function WhyUs() {
               transition={{ delay: 0.1 }}
               className="space-y-3 text-secondary-foreground/80 text-lg mb-8"
             >
-              <li className="flex items-start gap-2"><span className="text-primary mt-1">—</span> No shortcuts. Built to last.</li>
-              <li className="flex items-start gap-2"><span className="text-primary mt-1">—</span> Clear communication from start to finish.</li>
-              <li className="flex items-start gap-2"><span className="text-primary mt-1">—</span> We fix the root problem — not just the symptom.</li>
-              <li className="flex items-start gap-2"><span className="text-primary mt-1">—</span> Respect for your home and your time.</li>
+              <li className="flex items-start gap-2"><span className="text-[#41b75b] mt-1 font-bold">—</span> No shortcuts. Built to last.</li>
+              <li className="flex items-start gap-2"><span className="text-[#41b75b] mt-1 font-bold">—</span> Clear communication from start to finish.</li>
+              <li className="flex items-start gap-2"><span className="text-[#41b75b] mt-1 font-bold">—</span> We fix the root problem — not just the symptom.</li>
+              <li className="flex items-start gap-2"><span className="text-[#41b75b] mt-1 font-bold">—</span> Respect for your home and your time.</li>
             </motion.ul>
 
             <motion.div

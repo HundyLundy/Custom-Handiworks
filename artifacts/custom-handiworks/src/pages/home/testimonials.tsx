@@ -36,7 +36,7 @@ export function Testimonials() {
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-display font-bold text-foreground mb-6"
           >
-            Word on the <span className="text-primary">Street</span>
+            Word on the <span className="text-[#41b75b]">Street</span>
           </motion.h2>
           <p className="text-lg text-muted-foreground">
             What your Denver neighbors are saying about Custom Handiworks.
@@ -53,7 +53,7 @@ export function Testimonials() {
               transition={{ delay: index * 0.1 }}
               className="bg-card border border-border p-8 rounded-3xl shadow-sm hover:shadow-xl transition-shadow duration-300 relative flex flex-col"
             >
-              <div className="flex gap-1 mb-5 text-primary">
+              <div className="flex gap-1 mb-5 text-[#41b75b]">
                 {[...Array(review.rating)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-current" />
                 ))}

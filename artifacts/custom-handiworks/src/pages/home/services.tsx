@@ -75,7 +75,7 @@ export function Services() {
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-display font-bold text-foreground mb-6"
           >
-            Craftsmanship You Can <span className="text-primary">Count On</span>
+            Craftsmanship You Can <span className="text-[#41b75b]">Count On</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

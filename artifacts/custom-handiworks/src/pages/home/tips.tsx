@@ -62,7 +62,7 @@ export function Tips() {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-sm font-semibold uppercase tracking-widest text-primary mb-3"
+            className="text-sm font-semibold uppercase tracking-widest text-[#41b75b] mb-3"
           >
             Denver Home Tips
           </motion.p>
@@ -73,7 +73,7 @@ export function Tips() {
             transition={{ delay: 0.05 }}
             className="text-3xl md:text-5xl font-display font-bold text-foreground mb-5"
           >
-            Advice From Someone Who's <span className="text-primary">Seen It All</span>
+            Advice From Someone Who's <span className="text-[#41b75b]">Seen It All</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

@@ -16,7 +16,7 @@ export function ServiceArea() {
         <div className="bg-white rounded-3xl shadow-xl shadow-black/5 border border-border overflow-hidden flex flex-col lg:flex-row">
 
           <div className="lg:w-1/2 p-10 md:p-16 flex flex-col justify-center">
-            <div className="inline-flex items-center gap-2 text-primary font-semibold mb-4">
+            <div className="inline-flex items-center gap-2 text-[#41b75b] font-semibold mb-4">
               <MapPin className="w-5 h-5" />
               <span>Local Denver Coverage</span>
             </div>
