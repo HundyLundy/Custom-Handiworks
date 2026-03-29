@@ -1,0 +1,50 @@
+I need you to make 5 targeted improvements to the existing Custom Handiworks website. Do NOT rebuild or redesign anything. Work within the existing structure and style. Execute all 5 tasks in one pass.
+TASK 1: Replace the HubSpot contact form with a direct GHL webhook form
+Find the Contact Us section (it currently has a HubSpot embed with <script src="https://js-na2.hsforms.net/forms/embed/244877209.js"> and a <div class="hs-form-frame"> ). Remove both of those completely.
+Replace them with a custom React form component that:
+Row 1: First Name (left) | Last Name (right)
+Row 2: Email (left) | Phone (right)
+Row 3: Service Needed — dropdown: Custom Carpentry, Custom Furniture, Trim & Molding, Door Installation, Home Repairs, Interior Renovations, Other
+Row 4: Message (textarea, 4 rows)
+On submit, POST this JSON using fetch() to https://services.leadconnectorhq.com/hooks/WO8ipaZDubipU34hUEA7/webhook-trigger/cda57822-76b1-4518-b6ef-a44e59a8c06c:
+JSON
+{
+  "firstName": "",
+  "lastName": "",
+  "email": "",
+  "phone": "",
+  "serviceNeeded": "",
+  "message": "",
+  "source": "custom-handiworks-website",
+  "division": "handiworks"
+}
+On success: replace form with "Got it. Hunter will be in touch within 1 business day." in green (#41b75b )
+On error: show inline: "Something went wrong. Call or text Hunter directly at (720) 937-3003."
+Style to match existing dark card style (dark background, white labels, green submit button #41b75b)
+All webhook POSTs must use fetch() with Content-Type: application/json header
+TASK 2: Apply Hormozi conversion principles to the Contact Us section
+Above the form, update headline and subheadline to:
+Headline: "Tell Us What You're Dealing With"
+Subheadline: "Most projects are assessed and scheduled within 48 hours. No long waitlists. No runaround. Just a straight answer on what it'll take and what it'll cost — before work begins."
+Add 3 trust badges directly above the form (small icons + text, horizontal row):
+✅ Free Estimates
+✅ Responds Within 1 Business Day
+✅ No Surprise Charges
+TASK 3: Apply Koerner fast-feedback principle to the submit button
+Change the submit button text to: "Request a Free Estimate →"
+Add small text directly below the button (muted color, smaller font):
+"No commitment required. We'll assess your project and give you a straight number."
+TASK 4: Add a PSS cross-sell section just above the footer
+New full-width section directly above the footer:
+Background: #0d1117
+Small label/pill at top: "A Perfect Synergy Solutions Company"
+Headline: "Also need help with water efficiency?"
+Subheadline: "If your property is spending $5,000+ a month on water, Perfect Water Valve can cut that significantly. Same quality. Same standards."
+Two buttons side by side (stacked on mobile):
+Button 1 (ghost/outline): "Learn About Perfect Water Valve →" → https://perfectwatervalve.com (new tab )
+Button 2 (solid green #41b75b): "I Want the Combo — Handiworks + Water →" → https://perfectsynergysolutions.com (new tab )
+TASK 5: Canonical tag + meta description
+In index.html:
+Add: <link rel="canonical" href="https://customhandiworks.com" />
+Set meta description to exactly: "Custom carpentry, home repairs, and precision installs in Denver, CO. Hunter Lundquist — local craftsman with free estimates and no-surprise pricing. Call (720 ) 937-3003."
+After completing all 5 tasks: save, build, and republish the app. Confirm each task is done in your summary.
