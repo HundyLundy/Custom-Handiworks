@@ -113,7 +113,7 @@ export function Contact() {
                         name="firstName"
                         type="text"
                         required
-                        placeholder="Hunter"
+                        placeholder="Jane"
                         value={form.firstName}
                         onChange={handleChange}
                         className={inputClass}
@@ -126,7 +126,7 @@ export function Contact() {
                         name="lastName"
                         type="text"
                         required
-                        placeholder="Lundquist"
+                        placeholder="Smith"
                         value={form.lastName}
                         onChange={handleChange}
                         className={inputClass}
