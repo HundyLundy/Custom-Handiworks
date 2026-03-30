@@ -56,6 +56,8 @@ export interface LocationPageProps {
 }
 
 export function LocationPage({ city, slug, description, nearby }: LocationPageProps) {
+  const shortCity = city.split(",")[0].trim();
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -109,7 +111,7 @@ export function LocationPage({ city, slug, description, nearby }: LocationPagePr
         <section className="py-20 bg-background">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-3">
-              What We Do in {city}
+              What We Do in {shortCity}
             </h2>
             <p className="text-muted-foreground mb-10 max-w-xl">
               Three clear categories of work. If you're not sure which fits, we'll figure it out quickly.
@@ -137,7 +139,7 @@ export function LocationPage({ city, slug, description, nearby }: LocationPagePr
         <section className="py-20 bg-muted/30">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-10">
-              Why {city} Clients Call Custom Handiworks
+              Why {shortCity} Clients Call Custom Handiworks
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {WHY_US.map((w) => {
@@ -177,7 +179,7 @@ export function LocationPage({ city, slug, description, nearby }: LocationPagePr
         <section className="py-20 bg-background">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-              Serving {city} and Surrounding Areas
+              Serving {shortCity} and Surrounding Areas
             </h2>
             <p className="text-muted-foreground leading-relaxed max-w-2xl">
               {nearby}
@@ -189,7 +191,7 @@ export function LocationPage({ city, slug, description, nearby }: LocationPagePr
         <section className="py-20 bg-[#0d1117]">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-              Ready to Start Your {city} Project?
+              Ready to Start Your {shortCity} Project?
             </h2>
             <p className="text-white/60 max-w-xl mx-auto mb-8 leading-relaxed">
               Free estimates, no runaround. We'll give you a straight answer on what it'll take and what it'll cost — before any work begins.
