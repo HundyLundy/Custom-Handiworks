@@ -1,0 +1,49 @@
+Here it is — copy everything below this line:
+"Add SEO-optimized location pages and a services hub to the Custom Handiworks site. Here is the full spec:
+ROUTING
+Add the following routes to the app router (in addition to the existing homepage /):
+/services → ServicesHub.tsx
+/commercial-contractor-aurora-co → LocationAurora.tsx
+/commercial-contractor-denver-co → LocationDenver.tsx
+/commercial-contractor-englewood-co → LocationEnglewood.tsx
+/commercial-contractor-littleton-co → LocationLittleton.tsx
+/commercial-contractor-cherry-creek-denver → LocationCherryCreek.tsx
+/commercial-contractor-cherry-hills-village-co → LocationCherryHills.tsx
+/commercial-contractor-cheesman-park-denver → LocationCheesmanPark.tsx
+/commercial-contractor-congress-park-denver → LocationCongressPark.tsx
+NAVIGATION
+In the main site header/nav, add a dropdown or link labeled 'Service Areas' that links to each of the 8 location pages. Also add a 'Services' nav link pointing to /services.
+SERVICES HUB PAGE (/services)
+Title tag: Commercial Contractor Services | Custom Handiworks | Denver, CO
+Meta description: Custom Handiworks provides commercial construction, renovation, tenant improvements, and property maintenance across the Denver metro. Licensed, insured, fast turnaround.
+Page content sections:
+Hero — H1: "Commercial Construction & Renovation Services in Denver, CO" — subhead: "From tenant improvements to full commercial renovations, Custom Handiworks delivers licensed, insured work on time and on budget."
+Services grid — 6 cards: Commercial Renovation | Tenant Improvements | Property Maintenance | Interior Buildouts | Exterior Repairs & Upgrades | Emergency Repair Services
+Why Choose Us — 3 columns: Licensed & Insured | Fast Turnaround | Property Manager Specialists
+CTA section — "Ready to get started? Get a free quote today." with a button linking to /#contact
+LOCATION PAGE TEMPLATE
+Each of the 8 location pages follows this structure:
+Title tag: Commercial Contractor in [CITY] | Custom Handiworks
+Meta description: Custom Handiworks provides commercial construction, renovation, and property maintenance in [CITY]. Licensed, insured, and serving the Denver metro. Call (720) 937-3004.
+Canonical URL: https://customhandiworks.com/[SLUG]
+Sections:
+Hero — H1: "Commercial Contractor in [CITY]" — subhead: [CITY_DESCRIPTION] — CTA button: "Get a Free Quote" linking to /#contact
+H2: "Our Services in [CITY]" — list of 6 services with 1–2 sentence descriptions each: Commercial Renovation, Tenant Improvements, Property Maintenance, Interior Buildouts, Exterior Repairs & Upgrades, Emergency Repair Services
+H2: "Why [CITY] Businesses Choose Custom Handiworks" — 3 points: Local knowledge of [CITY] commercial zoning and permit requirements | Fast response times — we're based in the Denver metro | Trusted by property managers and business owners across [CITY]
+H2: "Serving [CITY] and Surrounding Areas" — short paragraph mentioning nearby neighborhoods or cities
+H2: "Ready to Start Your [CITY] Project?" — paragraph + button linking to /#contact — display phone number (720 ) 937-3004
+Add LocalBusiness schema in the head for each page with name, url, telephone, areaServed, and description fields
+CITY VALUES
+Aurora, CO | slug: commercial-contractor-aurora-co | "Custom Handiworks delivers expert commercial construction and renovation services to property managers and business owners throughout Aurora, Colorado."
+Denver, CO | slug: commercial-contractor-denver-co | "From LoDo to Capitol Hill, Custom Handiworks handles commercial renovation, tenant improvements, and property maintenance across Denver."
+Englewood, CO | slug: commercial-contractor-englewood-co | "Custom Handiworks serves commercial property owners and managers in Englewood with fast, reliable construction and renovation services."
+Littleton, CO | slug: commercial-contractor-littleton-co | "Serving Littleton's growing commercial corridor with licensed construction, renovation, and maintenance services built for property managers."
+Cherry Creek, Denver | slug: commercial-contractor-cherry-creek-denver | "In one of Denver's most active commercial districts, Custom Handiworks provides high-quality tenant improvements and commercial renovations in Cherry Creek."
+Cherry Hills Village, CO | slug: commercial-contractor-cherry-hills-village-co | "Custom Handiworks brings precision commercial construction and renovation services to Cherry Hills Village and the surrounding south Denver metro."
+Cheesman Park, Denver | slug: commercial-contractor-cheesman-park-denver | "Serving the Cheesman Park neighborhood with commercial buildouts, property maintenance, and renovation services tailored to Denver's urban core."
+Congress Park, Denver | slug: commercial-contractor-congress-park-denver | "Custom Handiworks handles commercial renovation and maintenance projects throughout the Congress Park neighborhood and central Denver."
+SITEMAP
+Update public/sitemap.xml to include all 9 new URLs (8 location pages + /services). Each new entry: changefreq monthly, priority 0.8. Keep homepage at priority 1.0.
+INTERNAL LINKING
+On the homepage, add a section above the footer titled 'Service Areas' with a grid of links to all 8 location pages.
+Do not change any existing homepage content, styles, or the contact form. Only add the new pages, routes, navigation links, service areas section on the homepage, and updated sitemap. Match the existing design system exactly.

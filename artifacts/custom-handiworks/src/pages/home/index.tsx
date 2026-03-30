@@ -11,6 +11,7 @@ import { Contact } from "./contact";
 import { Tips } from "./tips";
 import { Gallery } from "./gallery";
 import { PSSCrossSell } from "./pss-crosssell";
+import { ServiceAreasLinks } from "./service-areas-links";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
         <Tips />
         <Contact />
         <PSSCrossSell />
+        <ServiceAreasLinks />
       </main>
 
       <Footer />
