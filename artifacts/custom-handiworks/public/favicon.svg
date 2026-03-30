@@ -1,3 +1,10 @@
 <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="180" height="180" rx="36" fill="#FF3C00"/>
+  <!-- Dark background matching site secondary color -->
+  <rect width="180" height="180" rx="36" fill="#1a2e1e"/>
+  <!-- Green accent bar -->
+  <rect x="0" y="130" width="180" height="50" rx="0" fill="#41b75b"/>
+  <rect x="0" y="130" width="180" height="50" rx="36" fill="#41b75b"/>
+  <rect x="0" y="130" width="180" height="25" fill="#41b75b"/>
+  <!-- CH monogram -->
+  <text x="90" y="108" font-family="Georgia, serif" font-size="82" font-weight="700" fill="white" text-anchor="middle" dominant-baseline="auto" letter-spacing="-4">CH</text>
 </svg>
