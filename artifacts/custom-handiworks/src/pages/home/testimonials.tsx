@@ -4,6 +4,27 @@ import { Star } from "lucide-react";
 export function Testimonials() {
   const reviews = [
     {
+      name: "Kenny Pennie",
+      location: "Denver, CO",
+      date: "March 2026",
+      text: "We had Hunter from Custom Handiworks back out to help us with our bonus room, and once again, he exceeded expectations. He removed our old open shelving and installed custom doors, and the room looks completely transformed! It's one thing to build something new, but it's another to seamlessly integrate new doors into an existing space — his craftsmanship and precision are top-tier. Hunter is professional, tidy, and consistently delivers high-end results.",
+      rating: 5
+    },
+    {
+      name: "Megan Lundquist",
+      location: "Denver, CO",
+      date: "March 2026",
+      text: "Hunter from Custom Handiworks is officially our go-to for any home project! He recently installed sliding doors on our sunroom, and the transformation is incredible. It wasn't a simple swap — it required a real eye for precision to get everything aligned perfectly, and Hunter's attention to detail really shone through. The doors glide like a dream, and the finish work is seamless. It's rare to find someone who is as talented as he is professional and easy to work with.",
+      rating: 5
+    },
+    {
+      name: "Legit Trips",
+      location: "Denver, CO",
+      date: "March 2026",
+      text: "Hunter at Custom Handiworks is a true craftsman. He redid our nursery bathroom from nothing and the quality is incredible. Super detail-oriented, reliable, and very talented. We are obsessed with the finished product! 10/10 recommend.",
+      rating: 5
+    },
+    {
       name: "Maura A.",
       location: "Southwest Denver, CO",
       date: "February 2026",
