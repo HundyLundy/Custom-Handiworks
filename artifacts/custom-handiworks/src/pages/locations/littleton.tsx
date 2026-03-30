@@ -5,7 +5,7 @@ export default function LocationLittleton() {
     <LocationPage
       city="Littleton, CO"
       slug="commercial-contractor-littleton-co"
-      description="Serving Littleton's growing commercial corridor with licensed construction, renovation, and maintenance services built for property managers."
+      description="Finish carpentry, custom woodwork, and home repairs for Littleton homeowners. No shortcuts, no surprises — just clean work that lasts."
       nearby="We serve Littleton and nearby communities including Centennial, Highlands Ranch, Englewood, and Ken Caryl — the full southwest Denver metro."
     />
   );
