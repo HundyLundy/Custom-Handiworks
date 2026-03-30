@@ -85,7 +85,6 @@ export function Testimonials() {
               <div className="mt-auto pt-4 border-t border-border">
                 <p className="font-bold text-foreground">{review.name}</p>
                 <p className="text-sm text-muted-foreground">{review.location}</p>
-                <p className="text-xs text-muted-foreground/60 mt-0.5">{review.date}</p>
               </div>
               <div className="absolute top-6 right-8 text-primary/10 font-display text-8xl leading-none font-bold select-none">
                 "
