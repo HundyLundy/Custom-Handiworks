@@ -50,9 +50,11 @@ export function Contact() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          ...form,
-          source: "custom-handiworks-website",
-          division: "handiworks",
+          name: `${form.firstName} ${form.lastName}`.trim(),
+          email: form.email,
+          phone: form.phone,
+          service: form.serviceNeeded,
+          message: form.message,
         }),
       });
       if (!res.ok) throw new Error("Non-2xx response");
@@ -99,7 +101,7 @@ export function Contact() {
                 >
                   <CheckCircle2 className="w-6 h-6 text-[#41b75b] shrink-0 mt-0.5" />
                   <p className="text-[#41b75b] font-semibold text-base">
-                    Got it. Hunter will be in touch within 1 business day.
+                    Thanks! We'll be in touch within one business day.
                   </p>
                 </motion.div>
               ) : (
@@ -197,8 +199,7 @@ export function Contact() {
 
                   {status === "error" && (
                     <p className="text-red-400 text-sm">
-                      Something went wrong. Call or text Hunter directly at{" "}
-                      <a href="tel:7209373003" className="underline font-semibold">(720) 937-3003</a>.
+                      Something went wrong. Please call us at (720) 937-3004.
                     </p>
                   )}
 
