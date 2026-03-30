@@ -1,0 +1,6 @@
+{
+  "installCommand": "cd ../.. && pnpm install",
+  "buildCommand": "cd ../.. && pnpm --filter @workspace/custom-handiworks run build",
+  "outputDirectory": "dist/public",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
