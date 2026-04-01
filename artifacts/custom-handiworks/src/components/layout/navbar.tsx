@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import { Menu, X, ChevronDown, MapPin } from "lucide-react";
+import { useLocation } from "wouter";
+import { Menu, X, ChevronDown, MapPin, Home } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import logoImg from "@assets/A63BEBB4-33FF-4129-87C3-0D140E3204BA_1774146982330.png";
 
@@ -15,6 +16,9 @@ const SERVICE_AREAS = [
 ];
 
 export function Navbar() {
+  const [location] = useLocation();
+  const isLocationPage = location.startsWith("/commercial-contractor-");
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isAreasOpen, setIsAreasOpen] = useState(false);
@@ -79,39 +83,49 @@ export function Navbar() {
             </a>
           ))}
 
-          {/* Service Areas dropdown */}
-          <div className="relative" ref={dropdownRef}>
-            <button
-              onClick={() => setIsAreasOpen((v) => !v)}
-              className={`flex items-center gap-1 text-sm font-medium transition-colors duration-200 ${textColor}`}
+          {/* Service Areas dropdown OR Home link */}
+          {isLocationPage ? (
+            <a
+              href="/"
+              className={`flex items-center gap-1.5 text-sm font-medium transition-colors duration-200 ${textColor}`}
             >
-              Service Areas
-              <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isAreasOpen ? "rotate-180" : ""}`} />
-            </button>
-            <AnimatePresence>
-              {isAreasOpen && (
-                <motion.div
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 8 }}
-                  transition={{ duration: 0.15 }}
-                  className="absolute top-full right-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-border overflow-hidden"
-                >
-                  {SERVICE_AREAS.map((area) => (
-                    <a
-                      key={area.slug}
-                      href={`/${area.slug}`}
-                      onClick={() => setIsAreasOpen(false)}
-                      className="flex items-center gap-2 px-4 py-2.5 text-sm text-foreground hover:bg-[#41b75b]/8 hover:text-[#41b75b] transition-colors"
-                    >
-                      <MapPin className="w-3.5 h-3.5 text-[#41b75b] shrink-0" />
-                      {area.city}
-                    </a>
-                  ))}
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
+              <Home className="w-3.5 h-3.5" />
+              Home
+            </a>
+          ) : (
+            <div className="relative" ref={dropdownRef}>
+              <button
+                onClick={() => setIsAreasOpen((v) => !v)}
+                className={`flex items-center gap-1 text-sm font-medium transition-colors duration-200 ${textColor}`}
+              >
+                Service Areas
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isAreasOpen ? "rotate-180" : ""}`} />
+              </button>
+              <AnimatePresence>
+                {isAreasOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 8 }}
+                    transition={{ duration: 0.15 }}
+                    className="absolute top-full right-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-border overflow-hidden"
+                  >
+                    {SERVICE_AREAS.map((area) => (
+                      <a
+                        key={area.slug}
+                        href={`/${area.slug}`}
+                        onClick={() => setIsAreasOpen(false)}
+                        className="flex items-center gap-2 px-4 py-2.5 text-sm text-foreground hover:bg-[#41b75b]/8 hover:text-[#41b75b] transition-colors"
+                      >
+                        <MapPin className="w-3.5 h-3.5 text-[#41b75b] shrink-0" />
+                        {area.city}
+                      </a>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          )}
 
           <a
             href="/#contact"
@@ -150,40 +164,51 @@ export function Navbar() {
                 </a>
               ))}
 
-              {/* Mobile Service Areas */}
-              <div className="border-b border-border/50">
-                <button
-                  onClick={() => setIsMobileAreasOpen((v) => !v)}
-                  className="w-full flex items-center justify-between text-base font-medium text-foreground py-2.5"
+              {/* Mobile Service Areas OR Home link */}
+              {isLocationPage ? (
+                <a
+                  href="/"
+                  className="flex items-center gap-2 text-base font-medium text-foreground py-2.5 border-b border-border/50"
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Service Areas
-                  <ChevronDown className={`w-4 h-4 transition-transform ${isMobileAreasOpen ? "rotate-180" : ""}`} />
-                </button>
-                <AnimatePresence>
-                  {isMobileAreasOpen && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      className="overflow-hidden"
-                    >
-                      <div className="pb-2 pl-2 flex flex-col gap-1">
-                        {SERVICE_AREAS.map((area) => (
-                          <a
-                            key={area.slug}
-                            href={`/${area.slug}`}
-                            className="flex items-center gap-2 py-2 text-sm text-foreground/80 hover:text-[#41b75b]"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                          >
-                            <MapPin className="w-3.5 h-3.5 text-[#41b75b] shrink-0" />
-                            {area.city}
-                          </a>
-                        ))}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
+                  <Home className="w-4 h-4 text-[#41b75b]" />
+                  Home
+                </a>
+              ) : (
+                <div className="border-b border-border/50">
+                  <button
+                    onClick={() => setIsMobileAreasOpen((v) => !v)}
+                    className="w-full flex items-center justify-between text-base font-medium text-foreground py-2.5"
+                  >
+                    Service Areas
+                    <ChevronDown className={`w-4 h-4 transition-transform ${isMobileAreasOpen ? "rotate-180" : ""}`} />
+                  </button>
+                  <AnimatePresence>
+                    {isMobileAreasOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="pb-2 pl-2 flex flex-col gap-1">
+                          {SERVICE_AREAS.map((area) => (
+                            <a
+                              key={area.slug}
+                              href={`/${area.slug}`}
+                              className="flex items-center gap-2 py-2 text-sm text-foreground/80 hover:text-[#41b75b]"
+                              onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                              <MapPin className="w-3.5 h-3.5 text-[#41b75b] shrink-0" />
+                              {area.city}
+                            </a>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              )}
 
               <a
                 href="/#contact"
