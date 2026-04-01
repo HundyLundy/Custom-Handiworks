@@ -13,9 +13,9 @@ export function SEO({
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "name": "Custom Handiworks",
-    "image": "https://customhandiworks.com/images/logo.png",
-    "@id": "https://customhandiworks.com",
-    "url": "https://customhandiworks.com",
+    "image": "https://www.customhandiworks.com/images/logo.png",
+    "@id": "https://www.customhandiworks.com",
+    "url": "https://www.customhandiworks.com",
     "telephone": "(720) 937-3004",
     "email": "hunter@customhandiworks.com",
     "description": "Custom carpentry, precision installations, and home repairs serving Denver, CO and surrounding neighborhoods including Capitol Hill, Cherry Creek, Park Hill, Lowry, and more.",
@@ -81,7 +81,7 @@ export function SEO({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://customhandiworks.com" />
+      <meta property="og:url" content="https://www.customhandiworks.com" />
       <meta property="og:locale" content="en_US" />
       
       {/* Structured Data */}

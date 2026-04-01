@@ -69,7 +69,7 @@ export default function ServicesHub() {
           name="description"
           content="Custom carpentry, home repairs, and precision installs across the Denver metro. Hunter Lundquist — local craftsman with free estimates and no-surprise pricing. Call (720) 937-3003."
         />
-        <link rel="canonical" href="https://customhandiworks.com/services" />
+        <link rel="canonical" href="https://www.customhandiworks.com/services" />
       </Helmet>
 
       <Navbar />

@@ -62,7 +62,7 @@ export function LocationPage({ city, slug, description, nearby }: LocationPagePr
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Custom Handiworks",
-    url: `https://customhandiworks.com/${slug}`,
+    url: `https://www.customhandiworks.com/${slug}`,
     telephone: "(720) 937-3003",
     areaServed: city,
     description: `Custom Handiworks provides finish carpentry, custom woodwork, home repairs, and precision installations in ${city}. Call (720) 937-3003.`,
@@ -76,7 +76,7 @@ export function LocationPage({ city, slug, description, nearby }: LocationPagePr
           name="description"
           content={`Custom carpentry, home repairs, and precision installs in ${city}. Hunter Lundquist — local craftsman with free estimates and no-surprise pricing. Call (720) 937-3003.`}
         />
-        <link rel="canonical" href={`https://customhandiworks.com/${slug}`} />
+        <link rel="canonical" href={`https://www.customhandiworks.com/${slug}`} />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
 
